@@ -1,0 +1,80 @@
+// Avril Cao
+// October 1, 2024
+// Lab 4
+
+#include <iostream>
+#include <string>
+
+// I used #include <iostream> to use cout
+// I used #include <string> to use a string of characters
+
+using namespace std;
+
+// I used using namespace std so I don't have to std:: every time before a cout or endl
+
+int main ()
+
+// I used int main () to begin the program
+
+{
+    bool yes = true;
+    string fruit;
+    double gramSugar;
+
+// I used bool for true and false values
+// I used string for a string of characters
+// I used double for decimal numbers
+
+while (yes == true)
+
+// I used a while loop so that the body loops until the statement is false
+
+{
+    cout << "Enter fruit name and the grams of sugar in one cup of fruit: " << endl;
+    cin >> fruit >> gramSugar;
+
+if (gramSugar < 10)
+    cout << fruit << " LOW SUGAR FRUIT" << endl;
+
+else if (gramSugar > 14)
+    cout << fruit << " HIGH SUGAR FRUIT" << endl;
+
+else
+    cout << fruit << " MEDIUM SUGAR FRUIT" << endl;
+    
+// I used an else if in an if statement for a three way selection
+    
+cout << "Ask again" << endl;
+cin >> yes;
+
+// I used cin to put in true or false values that decide whether the body loops
+}
+
+    return 0;
+}
+
+/* Enter fruit name and the grams of sugar in one cup of fruit: 
+grapes 23.37
+grapes HIGH SUGAR FRUIT 
+Ask again
+1
+Enter fruit name and the grams of sugar in one cup of fruit: 
+avocado .99
+avocado LOW SUGAR FRUIT 
+Ask again
+1
+Enter fruit name and the grams of sugar in one cup of fruit: 
+strawberries 7 
+strawberries LOW SUGAR FRUIT 
+Ask again 
+1
+Enter fruit name and the grams of sugar in one cup of fruit: 
+grapefruit 10.6 
+grapefruit MEDIUM SUGAR FRUIT 
+Ask again
+1
+Enter fruit name and the grams of sugar in one cup of fruit: 
+orange 14
+orange MEDIUM SUGAR FRUIT 
+Ask again 
+0 */
